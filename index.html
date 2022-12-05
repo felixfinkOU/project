@@ -30,7 +30,7 @@
               </ul>
             </li>
             <li>
-              <form action="pl_teams.php" method="post">
+              <form action="soccer_teams.php" method="post">
                 <input type="text" name="team">
               <input type="submit">
               </form>

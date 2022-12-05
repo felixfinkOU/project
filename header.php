@@ -30,8 +30,8 @@
               </ul>
             </li>
             <li>
-              <form action="soccer_players.php" method="post">
-                <input type="text" name="position">
+              <form action="pl_teams.php" method="post">
+                <input type="text" name="team">
               <input type="submit">
               </form>
             </li>

@@ -29,7 +29,14 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-$sql = "SELECT Club, Standings FROM Teams WHERE League='PL'";
+
+if (isset($_POST['team'])) {
+  $var = $_POST['team'];
+  $sql = "SELECT * from Teams where Club='$var'";
+}
+else {
+  $sql = "SELECT Club, Standings FROM Teams WHERE League='PL'";
+}
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

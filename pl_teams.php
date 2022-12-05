@@ -29,7 +29,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-$sql = "SELECT Club, Standings FROM Teams";
+$sql = "SELECT Club, Standings FROM Teams WHERE League='PL'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

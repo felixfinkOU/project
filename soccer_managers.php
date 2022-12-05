@@ -104,7 +104,7 @@ if ($result->num_rows > 0) {
     </table>
 
 <!-- Go-back button  -->
-<a class="btn btn-primary" type="button" href="index.php">Go Back</a>
+<a class="btn btn-primary" type="button" href="pl_teams.php">Go Back</a>
 
 <!-- Add button -->
 <div>

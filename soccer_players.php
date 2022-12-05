@@ -57,6 +57,6 @@ $conn->close();
   </tbody>
     </table>
 
-<a class="btn btn-primary" type="button" href="index.php">Go Back</a>
+<a class="btn btn-primary" type="button" href="pl_teams.php">Go Back</a>
 
 <?php include 'footer.php';?>

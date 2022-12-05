@@ -24,6 +24,6 @@ $sql = "delete from Teams where Club=?";
 <div class="alert alert-success" role="alert">
   Club deleted.
 </div>
-    <a href="index.php" class="btn btn-primary">Go back</a>
+    <a href="pl_teams.php" class="btn btn-primary">Go back</a>
     
 <?php include 'footer.php';?>

@@ -26,6 +26,6 @@ $sql = "insert into Teams (Club, Standings) value (?,?)";
 <div class="alert alert-success" role="alert">
   New club added.
 </div>
-    <a href="index.php" class="btn btn-primary">Go back</a>
+    <a href="pl_teams.php" class="btn btn-primary">Go back</a>
     
 <?php include 'footer.php';?>

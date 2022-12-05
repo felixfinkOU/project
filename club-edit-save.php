@@ -25,6 +25,6 @@ $sql = "UPDATE Teams set Standings=? where Club=?";
 <div class="alert alert-success" role="alert">
   Club edited.
 </div>
-    <a href="index.php" class="btn btn-primary">Go back</a>
+    <a href="pl_teams.php" class="btn btn-primary">Go back</a>
 
 <?php include 'footer.php';?>

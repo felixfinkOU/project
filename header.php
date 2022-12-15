@@ -37,5 +37,9 @@
             </li>
           </ul>
         </div>
+        <form action="soccer_teams.php" method="post">
+                <input type="text" name="team">
+              <input type="submit">
+        </form>
       </div>
     </nav>

@@ -27,8 +27,6 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
                 <li><a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="soccer.html">Create New League</a></li>
               </ul>
             </li>
             <!-- Create new league -->

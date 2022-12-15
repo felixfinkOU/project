@@ -15,9 +15,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Return to Homepage -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
             </li>
+            <!-- Dropdown menu for different leagues -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Leagues
@@ -29,17 +31,12 @@
                 <li><a class="dropdown-item" href="soccer.html">Create New League</a></li>
               </ul>
             </li>
-            <li>
-              <form action="soccer_teams.php" method="post">
-                <input type="text" name="team">
-              <input type="submit">
-              </form>
-            </li>
           </ul>
         </div>
+        <!-- Search bar for teams -->
         <form action="soccer_teams.php" method="post">
-                <input type="text" name="team">
-              <input type="submit">
+          <input type="text" name="team">
+          <input type="submit">
         </form>
       </div>
     </nav>

@@ -17,7 +17,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- Return to Homepage -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Homepage</a>
             </li>
             <!-- Dropdown menu for different leagues -->
             <li class="nav-item dropdown">
@@ -30,6 +30,10 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="soccer.html">Create New League</a></li>
               </ul>
+            </li>
+            <!-- Create new league -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="create-new-league.php">Create New League</a>
             </li>
           </ul>
         </div>

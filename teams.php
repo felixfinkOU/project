@@ -6,9 +6,10 @@ $league = $_GET['leagueAbb'];
 
 <h1>Teams - <?=$league?></h1>
 <div>
-  <form method="get" action="matches.php">
+  <form method="get">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
-    <input type="submit" class="btn btn-primary" value="Show Matches">
+    <input type="submit" class="btn btn-primary" value="Show Matches" href="matches.php">
+    <input type="submit" class="btn btn-primary" value="Show Managers" href="soccer_managers.php">
   </form>
   <form method="get" action="soccer_managers.php">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
@@ -105,7 +106,7 @@ if ($result->num_rows > 0) {
 <!-- Add button -->
 <div>
   <button type="button" style="color:white;background-color:green;" class="btn" data-bs-toggle="modal" data-bs-target="#addClub">
-    Add new
+    Add new Club
   </button>
   <div class="modal fade" id="addClub" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addClubLabel" aria-hidden="true">
     <div class="modal-dialog">

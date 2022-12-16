@@ -2,16 +2,16 @@
 
 <!-- Layout -->
 <style>
-    .container {
+    .container-fluid {
     position: relative;
     width: 100%;
     height: auto
 }
-.container .img {
+.container-fluid .img {
     width: 100%;
     height: auto;
 }
-    .container .addLeagueButton {
+    .container-fluid .addLeagueButton {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,13 +25,13 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.container .addLeagueButton:hover {
+.container-fluid .addLeagueButton:hover {
     background-color: black;
 }
 </style>
 
 <!-- Add button -->
-<div class="container" width="100%">
+<div class="container-fluid" width="100%">
   <img src="img/league.jpg" class="img-fluid" alt="..." width="100%">
   <button type="button" class="addLeagueButton" data-bs-toggle="modal" data-bs-target="#addLeague">
     Create New League

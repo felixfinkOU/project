@@ -144,11 +144,11 @@ if ($result->num_rows > 0) {
 <!-- Go-back button -->
 <?php
 if (isset($_GET['leagueAbb'])) {
-$league = $_GET['leagueAbb'];?>
-<form method="get" action="teams.php">
-  <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
-  <input type="submit" class="btn btn-primary" value="Go Back">
-</form>
+  $league = $_GET['leagueAbb'];?>
+  <form method="get" action="teams.php">
+    <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
+    <input type="submit" class="btn btn-primary" value="Go Back">
+  </form>
 <?php
 }
 else {?>

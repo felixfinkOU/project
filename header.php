@@ -72,9 +72,3 @@
         </form>
       </div>
     </nav>
-    <?php
-        }
-      } else {
-        echo "0 results";
-      }
-    ?>

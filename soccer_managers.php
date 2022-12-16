@@ -24,7 +24,13 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from SoccerManagers";
+if (isset($_GET['leagueAbb'])) {
+  $league = $_GET['leagueAbb'];
+  $sql = "SELECT * from SoccerManagers m JOIN Teams t1 ON m.Club=t1.Club where t1.League='$league'";
+}
+else {
+  $sql = "SELECT * from SoccerManagers";
+}
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

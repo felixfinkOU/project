@@ -60,7 +60,8 @@
                           $selText = "";
                         }
                   ?>
-                    <option class="dropdown-item" value="<?=$leagueRow['Name']?>"<?=$selText?>><?=$leagueRow['Name']?></option>
+                    <li><a class="dropdown-item" href="<?=$leagueRow['Abbreviation']?>_teams.php"><?=$leagueRow['Name']?></a></li>
+                    <!-- <option class="dropdown-item" value="<?=$leagueRow['Name']?>"<?=$selText?>><?=$leagueRow['Name']?></option> -->
                   <?php
                       }
                   ?>

@@ -23,7 +23,6 @@
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 .container-fluid .addLeagueButton:hover {
     background-color: black;

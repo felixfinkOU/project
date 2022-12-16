@@ -49,7 +49,7 @@
                 <li>
                   <a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a>
                 </li> -->
-                <select class="dropdown-menu" id="dropdownLeagues" aria-label="Dropdown Leagues" name="iLeague" value="<?=$row['Name']?>">
+                <select class="form-select" id="dropdownLeagues" aria-label="Dropdown Leagues" name="iLeague" value="<?=$row['Name']?>">
                   <?php
                       $leagueSql = "select * from Leagues order by Name";
                       $leagueResult = $conn->query($leagueSql);
@@ -60,7 +60,7 @@
                           $selText = "";
                         }
                   ?>
-                    <option value="<?=$leagueRow['Name']?>"<?=$selText?>><?=$leagueRow['Name']?></option>
+                    <option class="dropdown-item" value="<?=$leagueRow['Name']?>"<?=$selText?>><?=$leagueRow['Name']?></option>
                   <?php
                       }
                   ?>

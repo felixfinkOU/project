@@ -57,6 +57,9 @@ $conn->close();
   </tbody>
     </table>
 
-<a class="btn btn-primary" type="button" href="teams.php">Go Back</a>
+<form method="get" action="teams.php">
+  <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
+  <input type="submit" class="btn btn-primary" value="Go Back">
+</form>
 
 <?php include 'footer.php';?>

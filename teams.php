@@ -9,7 +9,7 @@ $league = $_GET['leagueAbb'];
   <a class="btn btn-primary" type="button" href="matches.php">Show Matches</a>
   <form method="get" action="matches.php">
     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
-    <input type="submit" class="button" value="Show Matches">
+    <input type="submit" class="btn btn-primary" value="Show Matches">
   </form>
   <a class="btn btn-primary" type="button" href="soccer_managers.php">Show Managers</a>
   <a class="btn btn-primary" type="button" href="soccer_players.php">Show Players</a>

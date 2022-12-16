@@ -26,9 +26,9 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-if (isset($_POST['position'])) {
-  $var = $_POST['position'];
-  $sql = "SELECT * from SoccerPlayer where Position='$var'";
+if (isset($_GET['leagueAbb'])) {
+  $league = $_GET['leagueAbb'];
+  $sql = "SELECT * from SoccerPlayer p JOIN Teams t1 ON p.Club=t1.Club where t1.League='$league'";
 }
 else {
   $sql = "SELECT * from SoccerPlayer";

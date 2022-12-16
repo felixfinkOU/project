@@ -50,7 +50,7 @@
                     while($leagueRow = $result->fetch_assoc()) {
                 ?>
                   <li>
-                    <a class="dropdown-item" href="<?=$leagueRow["Abbreviation"]?>_teams.php"><?=$leagueRow["Name"]?></a>
+                    <a class="dropdown-item" href="teams.php"><?=$leagueRow["Name"]?></a>
                     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">
                   </li>
                 <?php

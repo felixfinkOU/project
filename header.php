@@ -8,6 +8,22 @@
   </head>
   <body>
     
+    <?php
+      $servername = "localhost";
+      $username = "felixfin_user2";
+      $password = "O-,GXdw4e3QG";
+      $dbname = "felixfin_homework3";
+
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "SELECT * from Leagues";
+      $result = $conn->query($sql);
+    ?>
     <nav class="navbar navbar-expand-lg" style="background-color:green;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><b>MySoccer</b></a>
@@ -25,39 +41,19 @@
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Leagues
               </a>
-              <?php
-                $servername = "localhost";
-                $username = "felixfin_user2";
-                $password = "O-,GXdw4e3QG";
-                $dbname = "felixfin_homework3";
-
-                // Create connection
-                $conn = new mysqli($servername, $username, $password, $dbname);
-                // Check connection
-                if ($conn->connect_error) {
-                  die("Connection failed: " . $conn->connect_error);
-                }
-
-                $sql = "SELECT * from Leagues";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                  // output data of each row
-                  while($row = $result->fetch_assoc()) {
-              ?>
               <ul class="dropdown-menu">
                 <!-- <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
                 <li>
                   <a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a>
                 </li> -->
-                <li><a class="dropdown-item" href="<?=$row["Abbreviation"]?>_teams.php"><?=$row["Name"]?></a></li>
+                <?php
+                    while($leagueRow = $result->fetch_assoc()) {
+                ?>
+                  <li><a class="dropdown-item" href="<?=$leagueRow["Abbreviation"]?>_teams.php"><?=$leagueRow["Name"]?></a></li>
+                <?php
+                    }
+                ?>
               </ul>
-              <?php
-                  }
-                } else {
-                  echo "0 results";
-                }
-              ?>
             </li>
             <!-- Create new league -->
             <li class="nav-item">

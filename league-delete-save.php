@@ -24,6 +24,6 @@ $sql = "delete from Leagues where Abbreviation=?";
 <div class="alert alert-success" role="alert">
   League unfollowed.
 </div>
-    <a href="index.php" class="btn btn-primary" style="color:white;background-color:red;">Go back</a>
+    <a href="index.php" class="btn btn-primary">Go back</a>
     
 <?php include 'footer.php';?>

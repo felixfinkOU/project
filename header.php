@@ -52,7 +52,7 @@
                   <li>
                     
                     <form method="get" action="teams.php">
-                      <a class="dropdown-item"><?=$leagueRow["Name"]?></a>
+                      <li><a class="dropdown-item"><?=$leagueRow["Name"]?></a></li>
                       <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
                     </form>
                   </li>

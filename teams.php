@@ -4,7 +4,7 @@
 $league = $_GET['leagueAbb'];
 ?>
 
-<h1 value="Teams - <?=$league?>"></h1>
+<h1>Teams - <?=$league?></h1>
 <div>
   <a class="btn btn-primary" type="button" href="matches.php">Show Matches</a>
   <a class="btn btn-primary" type="button" href="soccer_managers.php">Show Managers</a>

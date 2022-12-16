@@ -138,7 +138,7 @@ if ($result->num_rows > 0) {
 <!-- Delete Button -->
 <form method="get" action="league-delete-save.php">
     <input type="hidden" name="iLeague" value="<?$league?>" />
-    <input type="submit" value="btn btn-primary" value="Unfollow League" />
+    <input type="submit" class="btn btn-primary" value="Unfollow League" />
 </form>
 
 <?php

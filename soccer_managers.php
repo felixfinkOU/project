@@ -110,7 +110,10 @@ if ($result->num_rows > 0) {
     </table>
 
 <!-- Go-back button  -->
-<a class="btn btn-primary" type="button" href="pl_teams.php">Go Back</a>
+<form method="get" action="teams.php">
+  <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
+  <input type="submit" class="btn btn-primary" value="Go Back">
+</form>
 
 <!-- Add button -->
 <div>

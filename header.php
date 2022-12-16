@@ -50,8 +50,12 @@
                     while($leagueRow = $result->fetch_assoc()) {
                 ?>
                   <li>
-                    <a class="dropdown-item" href="teams.php"><?=$leagueRow["Name"]?></a>
-                    <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">
+                    
+                    <form method="get" action="teams.php">
+                      <label for="League" class="form-label"></label>
+                      <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
+                      <input type="submit" class="btn btn-primary" value="Submit">
+                    </form>
                   </li>
                 <?php
                     }

@@ -1,6 +1,10 @@
 <?php include 'header.php';?>
 
-<h1>Teams</h1>
+<?php
+$league = $_GET['leagueAbb'];
+?>
+
+<h1>Teams - <?php$league?></h1>
 <div>
   <a class="btn btn-primary" type="button" href="matches.php">Show Matches</a>
   <a class="btn btn-primary" type="button" href="soccer_managers.php">Show Managers</a>
@@ -35,7 +39,6 @@ if (isset($_POST['team'])) {
   $sql = "SELECT * from Teams where Club='$var'";
 }
 else {
-  $league = $_GET['leagueAbb'];
   $sql = "SELECT Club, Standings FROM Teams WHERE League='$league'";
 }
 $result = $conn->query($sql);

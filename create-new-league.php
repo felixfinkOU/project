@@ -31,7 +31,7 @@
 
 <!-- Add button -->
 <div class="container">
-  <img src="img/league.jpg" alt="..." width="100%">
+  <img src="img/league.jpg">
   <button type="button" class="addLeagueButton" data-bs-toggle="modal" data-bs-target="#addLeague">
     Create New League
   </button>

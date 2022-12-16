@@ -63,7 +63,7 @@
           </ul>
         </div>
         <!-- Search bar for teams -->
-        <form action="soccer_teams.php" method="post">
+        <form action="teams.php" method="post">
           <input type="text" name="team" placeholder="Search for a Team">
           <input type="submit">
         </form>

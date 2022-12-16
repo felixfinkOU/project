@@ -20,7 +20,6 @@
     background-color: #555;
     color: white;
     font-size: 20px;
-    padding: 12px 24px;
     border: none;
     cursor: pointer;
 }

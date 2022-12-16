@@ -1,10 +1,14 @@
 <?php include 'header.php';?>
 
 <?php
+if (isset($_GET['leagueAbb'])) {
 $league = $_GET['leagueAbb'];
+}
 ?>
 
 <h1>Teams - <?=$league?></h1>
+<?php if (isset($_GET['leagueAbb'])) {?>
+
 <div>
   <form method="get" action="matches.php">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
@@ -13,6 +17,7 @@ $league = $_GET['leagueAbb'];
     <input type="submit" class="btn btn-primary" value="Show Players" formaction="soccer_players.php">
   </form>
 </div>
+<?php } ?>
 <br></br>
 <table class="table table-striped">
   <thead>

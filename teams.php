@@ -3,12 +3,9 @@
 <?php
 if (isset($_GET['leagueAbb'])) {
 $league = $_GET['leagueAbb'];
-}
 ?>
 
 <h1>Teams - <?=$league?></h1>
-<?php if (isset($_GET['leagueAbb'])) {?>
-
 <div>
   <form method="get" action="matches.php">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 

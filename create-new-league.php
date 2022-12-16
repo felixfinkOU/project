@@ -8,11 +8,11 @@
     position: relative;
     width: 100%;
 }
-.container img {
+.container .img {
     width: 100%;
     height: auto;
 }
-    .container .btn {
+    .container .addLeagueButton {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,7 +26,7 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.container .btn:hover {
+.container .addLeagueButton:hover {
     background-color: black;
 }
 
@@ -35,7 +35,7 @@
 <!-- Add button -->
 <div class="container">
   <img src="img/league.jpg" alt="..." width="100%">
-  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#addLeague">
+  <button type="button" class="addLeagueButton" data-bs-toggle="modal" data-bs-target="#addLeague">
     Add new
   </button>
   <div class="modal fade" id="addLeague" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLeagueLabel" aria-hidden="true">

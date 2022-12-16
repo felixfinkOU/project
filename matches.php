@@ -32,7 +32,7 @@ if (isset($_GET['Team'])) {
 }
 elseif (isset($_GET['leagueAbb'])) {
   $league = $_GET['leagueAbb'];
-  $sql = "SELECT * from Matches m JOIN Teams t1 ON m.HomeTeam=t1.Club JOIN Teams t2 ON m.AwayTeam=t2.Club where HomeTeam='$league' OR AwayTeam='$league'";
+  $sql = "SELECT * from Matches m JOIN Teams t1 ON m.HomeTeam=t1.Club JOIN Teams t2 ON m.AwayTeam=t2.Club where t1.League='$league' OR t2.League='$league'";
 }
 else {
   $sql = "SELECT * from Matches";

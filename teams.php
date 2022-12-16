@@ -10,13 +10,7 @@ $league = $_GET['leagueAbb'];
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
     <input type="submit" class="btn btn-primary" value="Show Matches">
     <input type="submit" class="btn btn-primary" value="Show Managers" formaction="soccer_managers.php">
-  </form>
-  <form method="get" action="soccer_managers.php">
-    <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
-  </form>
-  <form method="get" action="soccer_players.php">
-    <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
-    <input type="submit" class="btn btn-primary" value="Show Players">
+    <input type="submit" class="btn btn-primary" value="Show Players" formaction="soccer_players.php">
   </form>
 </div>
 <br></br>

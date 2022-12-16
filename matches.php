@@ -29,7 +29,7 @@ if ($conn->connect_error) {
 if (isset($_GET['Team'])) {
   $var = $_GET['Team'];
   $sql = "SELECT * from Matches where HomeTeam='$var' OR AwayTeam='$var'";
-  $goback = "teams.php"; 
+  $goback = "index.php"; 
 }
 elseif (isset($_GET['leagueAbb'])) {
   $league = $_GET['leagueAbb'];

@@ -29,16 +29,13 @@ if ($conn->connect_error) {
 if (isset($_GET['Team'])) {
   $var = $_GET['Team'];
   $sql = "SELECT * from Matches where HomeTeam='$var' OR AwayTeam='$var'";
-  $goback = "index.php"; 
 }
 elseif (isset($_GET['leagueAbb'])) {
   $league = $_GET['leagueAbb'];
   $sql = "SELECT * from Matches m JOIN Teams t1 ON m.HomeTeam=t1.Club JOIN Teams t2 ON m.AwayTeam=t2.Club where t1.League='$league' AND t2.League='$league'";
-  $goback = "teams.php"; 
 }
 else {
   $sql = "SELECT * from Matches";
-  $goback = "index.php"; 
 }
 $result = $conn->query($sql);
 
@@ -145,10 +142,22 @@ if ($result->num_rows > 0) {
     </table>
 
 <!-- Go-back button -->
-<form method="get" action=<?=$goback?>>
+<?php
+if (isset($_GET['leagueAbb'])) {
+$league = $_GET['leagueAbb'];?>
+<form method="get" action="teams.php">
   <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
   <input type="submit" class="btn btn-primary" value="Go Back">
 </form>
+<?php
+}
+else {?>
+  <form method="get" action="index.php">
+    <input type="submit" class="btn btn-primary" value="Go Back">
+  </form>
+<?php
+}
+?>
 
 <!-- Add button -->
 <div>

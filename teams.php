@@ -7,7 +7,7 @@ $league = $_GET['leagueAbb'];
 <h1>Teams - <?=$league?></h1>
 <div>
   <form method="get" action="matches.php">
-    <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
+    <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
     <input type="submit" class="btn btn-primary" value="Show Matches">
   </form>
   <form method="get" action="soccer_managers.php">

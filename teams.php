@@ -10,12 +10,10 @@ $league = $_GET['leagueAbb'];
     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
     <input type="submit" class="btn btn-primary" value="Show Matches">
   </form>
-  <br></br>
   <form method="get" action="soccer_managers.php">
     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
     <input type="submit" class="btn btn-primary" value="Show Managers">
   </form>
-  <br></br>
   <form method="get" action="soccer_players.php">
     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
     <input type="submit" class="btn btn-primary" value="Show Players">

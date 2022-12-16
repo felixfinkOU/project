@@ -30,8 +30,12 @@ if (isset($_GET['Team'])) {
     $var = $_GET['Team'];
     $sql = "SELECT * from Matches where HomeTeam='$var' OR AwayTeam='$var'";
 }
+elseif (isset($_GET['leagueAbb'])) {
+  $league = $_GET['leagueAbb'];
+  $sql = "SELECT * from Matches m JOIN Teams t ON m.HomeTeam=t.League AND m.AwayTeam=t.League where HomeTeam='$league' OR AwayTeam='$league'";
+}
 else {
-    $sql = "SELECT * from Matches";
+  $sql = "SELECT * from Matches";
 }
 $result = $conn->query($sql);
 

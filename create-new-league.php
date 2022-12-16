@@ -2,6 +2,7 @@
 
 <h1>Create a New League</h1>
 
+<img src="img/league.jpg" class="img-fluid" alt="..." width="100%">
 
 <!-- Add button -->
 <div>

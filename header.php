@@ -22,6 +22,9 @@
             </li>
             <!-- Dropdown menu for different leagues -->
             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Leagues
+              </a>
               <?php
                 $servername = "localhost";
                 $username = "felixfin_user2";
@@ -42,9 +45,6 @@
                   // output data of each row
                   while($row = $result->fetch_assoc()) {
               ?>
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Leagues
-              </a>
               <ul class="dropdown-menu">
                 <!-- <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
                 <li>

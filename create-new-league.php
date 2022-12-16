@@ -3,12 +3,11 @@
 <!-- <h1>Create a New League</h1> -->
 
 <!-- Layout -->
-<!-- <style>
+<style>
     .container {
     position: relative;
     width: 100%;
 }
-
 .container img {
     width: 100%;
     height: auto;
@@ -27,12 +26,11 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
 .container .btn:hover {
     background-color: black;
 }
-  
-</style> -->
+
+</style>
 
 <!-- Add button -->
 <div class="container">

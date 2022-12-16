@@ -1,7 +1,5 @@
 <?php include 'header.php';?>
 
-<!-- <h1>Create a New League</h1> -->
-
 <!-- Layout -->
 <style>
     .container {
@@ -20,7 +18,7 @@
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -29,14 +27,13 @@
 .container .addLeagueButton:hover {
     background-color: black;
 }
-
 </style>
 
 <!-- Add button -->
 <div class="container">
   <img src="img/league.jpg" alt="..." width="100%">
   <button type="button" class="addLeagueButton" data-bs-toggle="modal" data-bs-target="#addLeague">
-    Add new
+    Create New League
   </button>
   <div class="modal fade" id="addLeague" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLeagueLabel" aria-hidden="true">
     <div class="modal-dialog">

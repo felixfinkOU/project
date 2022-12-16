@@ -3,7 +3,7 @@
 <!-- <h1>Create a New League</h1> -->
 
 <!-- Layout -->
-<style>
+<!-- <style>
     .container {
     position: relative;
     width: 100%;
@@ -32,7 +32,7 @@
     background-color: black;
 }
   
-</style>
+</style> -->
 
 <!-- Add button -->
 <div class="container">

@@ -53,7 +53,7 @@
                     
                     <form method="get" action="teams.php">
                       <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
-                      <input type="submit" class="btn btn-primary" value="<?=$leagueRow["Name"]?>">
+                      <input type="submit" class="dropdown-item" value="<?=$leagueRow["Name"]?>">
                     </form>
                   </li>
                 <?php

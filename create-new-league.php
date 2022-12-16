@@ -2,34 +2,6 @@
 
 <h1>Create a New League</h1>
 
-    <?php
-    $servername = "localhost";
-    $username = "felixfin_user2";
-    $password = "O-,GXdw4e3QG";
-    $dbname = "felixfin_homework3";
-    
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-
-
-if (isset($_POST['team'])) {
-  $var = $_POST['team'];
-  $sql = "SELECT * from Teams where Club='$var'";
-}
-else {
-  $sql = "SELECT Club, Standings FROM Teams WHERE League='$league'";
-}
-$result = $conn->query($sql);
-
-// if ($result->num_rows > 0) {
-//   // output data of each row
-//   while($row = $result->fetch_assoc()) {
-// ?>
-
 
 <!-- Add button -->
 <div>
@@ -64,8 +36,5 @@ $result = $conn->query($sql);
   </div>
 </div>
 
-<?php
-$conn->close();
-?>
 
 <?php include 'footer.php';?>

@@ -64,7 +64,8 @@
         </div>
         <!-- Search bar for teams -->
         <form action="soccer_teams.php" method="post">
-          <input type="text" name="team" aria-describedby="Search for a Team">
+          <input type="text" name="team" aria-describedby="searchBarHelp">
+          <div id="searchBarHelp" class="form-text">Search for a Team</div>
           <input type="submit">
         </form>
       </div>

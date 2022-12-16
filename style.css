@@ -1,4 +1,4 @@
-.addLeagueButton {
+.container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,3 +12,19 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+  

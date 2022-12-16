@@ -2,11 +2,11 @@
 
 <!-- <h1>Create a New League</h1> -->
 
-<img src="img/league.jpg" class="img-fluid" alt="..." width="100%">
 
 <!-- Add button -->
-<div>
-  <button type="button" style="color:white;background-color:green;" class="addLeagueButton" data-bs-toggle="modal" data-bs-target="#addLeague">
+<div class="container">
+  <img src="img/league.jpg" alt="..." width="100%">
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#addLeague">
     Add new
   </button>
   <div class="modal fade" id="addLeague" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addLeagueLabel" aria-hidden="true">

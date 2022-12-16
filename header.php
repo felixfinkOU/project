@@ -7,6 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
+    <?php
+      $servername = "localhost";
+      $username = "felixfin_user2";
+      $password = "O-,GXdw4e3QG";
+      $dbname = "felixfin_homework3";
+
+      // Create connection
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "SELECT * from Leagues";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+    ?>
     <nav class="navbar navbar-expand-lg" style="background-color:green;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><b>MySoccer</b></a>
@@ -25,8 +45,26 @@
                 Leagues
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
-                <li><a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a></li>
+                <!-- <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
+                <li>
+                  <a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a>
+                </li> -->
+                <select class="form-select" id="dropdownLeagues" aria-label="Dropdown Leagues" name="iLeague" value="<?=$row['Name']?>">
+                  <?php
+                      $leagueSql = "select * from Leagues order by Name";
+                      $leagueResult = $conn->query($leagueSql);
+                      while($leagueRow = $leagueResult->fetch_assoc()) {
+                        if ($leagueRow['Name'] == $row['Name']) {
+                          $selText = " selected";
+                        } else {
+                          $selText = "";
+                        }
+                  ?>
+                    <option value="<?=$leagueRow['Name']?>"<?=$selText?>><?=$leagueRow['Name']?></option>
+                  <?php
+                      }
+                  ?>
+                </select>
               </ul>
             </li>
             <!-- Create new league -->
@@ -42,3 +80,9 @@
         </form>
       </div>
     </nav>
+    <?php
+        }
+      } else {
+        echo "0 results";
+      }
+    ?>

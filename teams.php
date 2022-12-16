@@ -6,13 +6,18 @@ $league = $_GET['leagueAbb'];
 
 <h1>Teams - <?=$league?></h1>
 <div>
-  <a class="btn btn-primary" type="button" href="matches.php">Show Matches</a>
   <form method="get" action="matches.php">
     <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
     <input type="submit" class="btn btn-primary" value="Show Matches">
   </form>
-  <a class="btn btn-primary" type="button" href="soccer_managers.php">Show Managers</a>
-  <a class="btn btn-primary" type="button" href="soccer_players.php">Show Players</a>
+  <form method="get" action="soccer_managers.php">
+    <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
+    <input type="submit" class="btn btn-primary" value="Show Managers">
+  </form>
+  <form method="get" action="soccer_players.php">
+    <input type="hidden" name="leagueAbb" value="<?=$leagueRow["Abbreviation"]?>">                 
+    <input type="submit" class="btn btn-primary" value="Show Players">
+  </form>
 </div>
 <br></br>
 <table class="table table-striped">

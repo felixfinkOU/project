@@ -9,7 +9,7 @@ $league = $_GET['leagueAbb'];
   <form method="get" action="matches.php">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 
     <input type="submit" class="btn btn-primary" value="Show Matches">
-    <input type="submit" class="btn btn-primary" value="Show Managers" formactio="soccer_managers.php">
+    <input type="submit" class="btn btn-primary" value="Show Managers" formaction="soccer_managers.php">
   </form>
   <form method="get" action="soccer_managers.php">
     <input type="hidden" name="leagueAbb" value=<?=$league?>>                 

@@ -41,10 +41,6 @@
                 Leagues
               </a>
               <ul class="dropdown-menu">
-                <!-- <li><a class="dropdown-item" href="pl_teams.php">Premier League</a></li>
-                <li>
-                  <a class="dropdown-item" href="ou_teams.php">OU Intramural Soccer</a>
-                </li> -->
                 <?php
                     while($leagueRow = $result->fetch_assoc()) {
                 ?>
@@ -68,7 +64,7 @@
         </div>
         <!-- Search bar for teams -->
         <form action="soccer_teams.php" method="post">
-          <input type="text" name="team">
+          <input type="text" name="team" aria-describedby="Search for a Team">
           <input type="submit">
         </form>
       </div>

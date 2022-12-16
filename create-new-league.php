@@ -1,11 +1,11 @@
 <?php include 'header.php';?>
 
-<h1>Create a New League</h1>
+<!-- <h1>Create a New League</h1> -->
 
 <img src="img/league.jpg" class="img-fluid" alt="..." width="100%">
 
 <!-- Add button -->
-<div>
+<div class="addLeagueButton">
   <button type="button" style="color:white;background-color:green;" class="btn" data-bs-toggle="modal" data-bs-target="#addLeague">
     Add new
   </button>
